@@ -1,7 +1,7 @@
 import streamlit as st
 st.title("Правила Редакторов Группы")
 
-password = st.sidebar.text_input("Введите пароль для доступа к просмотру правил, Если у вас нету, то обратитесь вашему ГРГ или Заместителю ГРГ:", type="password")
+password = st.sidebar.text_input("Введите пароль для доступа к просмотру правил:", type="password")
 
 
 if password == st.secrets["password"]:
@@ -89,3 +89,4 @@ if password == st.secrets["password"]:
 
 else:
     st.warning("Доступ заблокирован. Введите верный пароль для просмотра правил, Если у вас нет пароля, обратитесь к ГРГ или заместителю ГРГ")
+
